@@ -12,3 +12,19 @@ for (int i=0;i<a.Length;i++)
     
 }
 
+string DelTwo(int [] a)
+{
+    string res= string.Empty;
+    for (int i=0; i<a.Length;i++)
+    {
+        if (a[i]%2==0)
+        {
+            res +=$"{a[i]} ";
+        }
+        
+    }
+    return res;
+}
+string Ev =DelTwo(a);
+Console.WriteLine();
+Console.WriteLine(Ev);
